@@ -3,12 +3,13 @@ package ru.netology.sqr;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class SQRServiceTest {
 
     @ParameterizedTest
-    @CsvSource  (value = {
+    @CsvSource(value = {
             "'Square calculate, between numbers 10 and 99',10,99,3",
             "'Square calculate, between numbers 10 and 16',10,16,1",
             "'Square calculate, between numbers 10 and 17',10,17,2"
@@ -18,9 +19,9 @@ class SQRServiceTest {
         SQRService service = new SQRService();
 
 
-        int square = service.square (firstNumber, secondNumber);
+        int square = service.square(firstNumber, secondNumber);
 
-        assertEquals(expected,square);
+        assertEquals(expected, square);
 
     }
 }
