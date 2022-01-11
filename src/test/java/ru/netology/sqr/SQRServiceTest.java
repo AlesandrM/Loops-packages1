@@ -10,9 +10,10 @@ class SQRServiceTest {
 
     @ParameterizedTest
     @CsvSource(value = {
-            "'Square calculate, between numbers 10 and 99',10,99,3",
-            "'Square calculate, between numbers 10 and 16',10,16,1",
-            "'Square calculate, between numbers 10 and 17',10,17,2"
+            "'Square calculate, between numbers 200 and 300',200, 300, 0",
+            "'Square calculate, between numbers 0 and 256',0,256,6",
+            "'Square calculate, between numbers 15 and 225',15,225,0",
+            "'Square calculate, between numbers 10 and 300',16,300,0"
     }
     )
     public void shouSquareCalculate(String test, int firstNumber, int secondNumber, int expected) {
