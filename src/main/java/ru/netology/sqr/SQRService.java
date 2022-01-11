@@ -6,8 +6,8 @@ public class SQRService {
     public int square(int firstNumber, int secondNumber) {
         int counter = 0;
 
-        for (int j = firstNumber; j < secondNumber; j++) {
-            if (j * j >= 10 && j * j <= 99) {
+        for (int j = 10; j < 100; j++) {
+            if (j * j >= firstNumber && j * j <= secondNumber) {
                 counter++;
             }
         }
