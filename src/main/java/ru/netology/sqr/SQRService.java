@@ -7,7 +7,7 @@ public class SQRService {
         int counter = 0;
 
         for (int j = firstNumber; j < secondNumber; j++) {
-            if (j * j >= 200 && j * j <= 300) {
+            if (j * j >= 10 && j * j <= 99) {
                 counter++;
             }
         }
